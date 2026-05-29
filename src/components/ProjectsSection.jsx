@@ -16,7 +16,7 @@ const projects = [
     title: "Customer Churn Prediction",
     description:
       "ML-based dashboard for predicting customer churn with interactive insights and analytics.",
-    image: "/projects/project4.png",
+    image: "/projects/Dashboard.jpg",
     tags: ["Python", "Pandas", "Streamlit"],
     demoUrl: "#",
     githubUrl: "https://github.com/dewni-shivanthi-23/customer-churn-predictor",
@@ -26,7 +26,7 @@ const projects = [
     title: "AI-resume Screener",
     description:
       "AI-powered resume screening app that analyzes resumes and matches candidates with job descriptions.",
-    image: "/projects/project3.png",
+    image: "/projects/Resume.png",
     tags: ["Streamlit", "Python", "ML"],
     demoUrl: "#",
     githubUrl: "https://github.com/dewni-shivanthi-23/AI-resume-screener",

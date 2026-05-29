@@ -225,7 +225,7 @@ export const EducationSection = () => {
     <section id="education" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
+        <h2 className="text-3xl md:text-3xl font-bold mb-16 text-center">
           Educational <span className="text-primary">Qualifications</span>
         </h2>
 
@@ -260,7 +260,7 @@ export const EducationSection = () => {
                       {item.place}
                     </p>
 
-                    <p className="text-muted-foreground text-sm leading-relaxed">
+                    <p className="text-gray-400 text-muted-foreground text-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -299,7 +299,7 @@ export const EducationSection = () => {
                       {item.place}
                     </p>
 
-                    <p className="text-muted-foreground text-sm leading-relaxed">
+                    <p className="text-gray-400 text-muted-foreground text-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>

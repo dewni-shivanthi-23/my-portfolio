@@ -94,7 +94,7 @@ export const HeroSection = () => {
         {/* GRID LAYOUT */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
           {/* LEFT CONTENT */}
-          <div className="text-center md:text-left space-y-6">
+          <div className="text-center md:text-left space-y-6 pt-14 pl-10">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               <span className="opacity-0 animate-fade-in">Hello, I'm </span>
               <span className="text-primary opacity-0 animate-fade-in-delay-1">
@@ -110,7 +110,7 @@ export const HeroSection = () => {
               <span className="animate-pulse">|</span>
             </p> */}
 
-            <p className="text-2xl md:text-4xl font-bold tracking-tight min-h-[3rem] flex items-center justify-center md:justify-start flex-wrap">
+            <p className="text-2xl md:text-3xl font-bold tracking-tight min-h-[3rem] flex items-center justify-center md:justify-start flex-wrap">
               <span className="mr-2">And I'm a</span>
               <span className="text-primary text-gradient ml-2">
                 {text}
@@ -118,7 +118,7 @@ export const HeroSection = () => {
               </span>
             </p>
 
-            <p className="text-gray-400 text-base md:text-lg text-muted-foreground opacity-0 animate-fade-in-delay-3">
+            <p className="text-gray-400 text-base md:text-base text-muted-foreground opacity-0 animate-fade-in-delay-3">
               {/* I build scalable and responsive web applications with a strong
               focus on clean architecture and user experience. Currently
               exploring Machine Learning, AI, and MLOps to develop intelligent
@@ -130,7 +130,7 @@ export const HeroSection = () => {
             </p>
 
             <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-              <a href="#projects" className="cosmic-button">
+              <a href="#projects" className="cosmic-button text-sm">
                 View My Work
               </a>
             </div>
@@ -140,7 +140,7 @@ export const HeroSection = () => {
           <div className="flex justify-center md:justify-end">
             <div className="relative">
               {/* <div className="w-72 h-72 md:w-96 md:h-96 rounded-2xl bg-gradient-to-br from-primary/20 to-purple-500/20 p-2 shadow-2xl"> */}
-              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 p-2 shadow-2xl">
+              <div className="w-72 h-72 md:w-87 md:h-87 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 p-2 shadow-2xl">
                 <img
                   src="projects/profile.jpg"
                   alt="Profile"

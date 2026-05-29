@@ -88,7 +88,7 @@ export const SkillsSection = () => {
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 className="text-3xl md:text-3xl font-bold mb-12 text-center">
           My <span className="text-primary"> Skills</span>
         </h2>
 
@@ -170,7 +170,7 @@ export const SkillsSection = () => {
                 {category.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 text-sm bg-[#1a1a1a] border border-gray-700 rounded-full text-gray-300"
+                    className="px-3 py-1 text-xs bg-[#1a1a1a] border border-gray-700 rounded-full text-gray-300"
                   >
                     {skill}
                   </span>

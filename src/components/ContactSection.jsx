@@ -67,18 +67,18 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+        <h2 className="text-3xl md:text-3xl font-bold mb-4 text-center">
           Get In <span className="text-primary"> Touch</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-gray-400 text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Have a project in mind or want to collaborate? Feel free to reach out.
           I'm always open to discussing new opportunities.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8 text-left">
-            <h3 className="text-2xl font-semibold mb-6 pl-17">
+            <h3 className="text-xl font-semibold mb-6 pl-17">
               {" "}
               Contact Information
             </h3>
@@ -89,10 +89,10 @@ export const ContactSection = () => {
                   <Mail className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Email</h4>
+                  <h4 className="font-small"> Email</h4>
                   <a
                     href="mailto:andradidewni2021@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-gray-400 text-muted-foreground hover:text-primary transition-colors"
                   >
                     andradidewni2021@gmail.com
                   </a>
@@ -103,10 +103,10 @@ export const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium">Phone</h4>
+                  <h4 className="font-small">Phone</h4>
                   <a
                     href="tel:+94716645180"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-gray-400 text-muted-foreground hover:text-primary transition-colors"
                   >
                     + (94) 716645180
                   </a>
@@ -117,8 +117,8 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                  <h4 className="font-small"> Location</h4>
+                  <a className="text-gray-400 text-muted-foreground hover:text-primary transition-colors">
                     No 19/16, Peradeniya road, Kandy
                   </a>
                 </div>
@@ -128,7 +128,10 @@ export const ContactSection = () => {
             <div className="pt-8 pl-17 text-left">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 pl-1 text-left">
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/dewni-andradi-35b1142b2"
+                  target="_blank"
+                >
                   <Linkedin />
                 </a>
                 <a href="#" target="_blank">
@@ -148,9 +151,9 @@ export const ContactSection = () => {
             className="bg-card p-8 rounded-lg shadow-xs"
             // onSubmit={handleSubmit}
           >
-            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+            <h3 className="text-xl font-semibold mb-6"> Send a Message</h3>
 
-            <form ref={form} onSubmit={handleSubmit} className="space-y-6">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label
                   htmlFor="name"
@@ -208,7 +211,7 @@ export const ContactSection = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2",
+                  "cosmic-button text-sm w-full flex items-center justify-center gap-2",
                 )}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}

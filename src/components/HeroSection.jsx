@@ -118,6 +118,20 @@ export const HeroSection = () => {
               </span>
             </p>
 
+            {/* MOBILE-ONLY IMAGE - shown here, between role and paragraph, on small screens */}
+            <div className="flex justify-center md:hidden">
+              <div className="relative">
+                <div className="w-56 h-56 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 p-2 shadow-2xl">
+                  <img
+                    src="projects/profile.jpg"
+                    alt="Profile"
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+                <div className="absolute inset-0 rounded-2xl blur-2xl bg-primary/20 -z-10"></div>
+              </div>
+            </div>
+
             <p className="text-gray-400 text-base md:text-base text-muted-foreground opacity-0 animate-fade-in-delay-3">
               {/* I build scalable and responsive web applications with a strong
               focus on clean architecture and user experience. Currently
@@ -134,10 +148,16 @@ export const HeroSection = () => {
                 View My Work
               </a>
             </div>
+
+            {/* MOBILE-ONLY SCROLL INDICATOR - sits right after the button in normal flow */}
+            <div className="flex md:hidden flex-col items-center pt-6 animate-bounce">
+              <span className="text-sm text-muted-foreground mb-2">Scroll</span>
+              <ArrowDown className="h-5 w-5 text-primary" />
+            </div>
           </div>
 
-          {/* RIGHT IMAGE */}
-          <div className="flex justify-center md:justify-end">
+          {/* RIGHT IMAGE (desktop only) */}
+          <div className="hidden md:flex md:justify-end">
             <div className="relative">
               {/* <div className="w-72 h-72 md:w-96 md:h-96 rounded-2xl bg-gradient-to-br from-primary/20 to-purple-500/20 p-2 shadow-2xl"> */}
               <div className="w-72 h-72 md:w-87 md:h-87 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 p-2 shadow-2xl">
@@ -172,8 +192,8 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      {/* Scroll indicator (desktop only) */}
+      <div className="hidden md:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 flex-col items-center animate-bounce">
         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-primary" />
       </div>

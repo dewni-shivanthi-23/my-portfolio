@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 export const ThemeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   // useEffect(() => {
   //   const storedTheme = localStorage.getItem("theme");
@@ -19,13 +19,14 @@ export const ThemeToggle = () => {
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
 
-    if (storedTheme === "dark") {
+    if (storedTheme === "light") {
+      setIsDarkMode(false);
+      document.documentElement.classList.remove("dark");
+    } else {
+      // Default to dark mode (also covers first-ever visit, no stored value)
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
-    } else {
-      setIsDarkMode(false);
-      document.documentElement.classList.remove("dark"); // ✅ FIX
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "dark");
     }
   }, []);
 
@@ -45,7 +46,7 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
+        "fixed top-5 right-5 max-sm:right-16 z-50 p-2 rounded-full transition-colors duration-300",
         "focus:outlin-none",
       )}
     >

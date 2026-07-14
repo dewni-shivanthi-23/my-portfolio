@@ -47,33 +47,33 @@ export const SkillsSection = () => {
       title: "Frontend Development",
       description:
         "Building responsive and interactive user interfaces with modern frameworks.",
-      skills: ["React", "Vue.js", "Angular", "TypeScript"],
+      skills: ["React", "HTML", "Bootstrap", "Tailwind css"],
       icon: <Code size={28} />,
     },
     {
       title: "Backend Development",
       description: "Creating robust server-side applications and RESTful APIs.",
-      skills: ["Node.js", "Express", "Django", "Laravel"],
+      skills: ["Node.js", "Express.js", "REST APIs", "Laravel"],
       icon: <Server size={28} />,
     },
     {
       title: "Database Management",
       description:
         "Designing and optimizing databases for performance and scalability.",
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"],
+      skills: ["MongoDB", "MySQL", "Firebase"],
       icon: <Database size={28} />,
     },
     {
       title: "Mobile Development",
       description:
         "Building cross-platform mobile applications with modern tools.",
-      skills: ["React Native", "Flutter", "TypeScript"],
+      skills: ["React Native", "Flutter"],
       icon: <Smartphone size={28} />,
     },
     {
       title: "Cloud & DevOps",
       description: "Deploying and managing applications in cloud environments.",
-      skills: ["AWS", "Docker", "CI/CD"],
+      skills: ["AWS", "Docker", "Azure", "CI/CD", "Kubernetes"],
       icon: <Cloud size={28} />,
     },
     {

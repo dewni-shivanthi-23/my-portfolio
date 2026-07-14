@@ -7,7 +7,7 @@ const projects = [
     description:
       "A full-stack recipe app to add, view, search, and manage recipes with authentication and cloud storage.",
     image: "/projects/project1.png",
-    tags: ["React", "Node.js", "Express"],
+    tags: ["React.js", "Node.js", "Express.js"],
     demoUrl: "#",
     githubUrl: "https://github.com/dewni-shivanthi-23/recipe_app",
   },
@@ -30,6 +30,36 @@ const projects = [
     tags: ["Streamlit", "Python", "ML"],
     demoUrl: "#",
     githubUrl: "https://github.com/dewni-shivanthi-23/AI-resume-screener",
+  },
+  {
+    id: 4,
+    title: "RedAlert",
+    description:
+      "Developed a full-stack blood donation platform enabling donor registration, emergency request management, and donor matching to improve response during emergencies.",
+    image: "/projects/bb.jpg",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/ImalshaSathsarani/RedAlert",
+  },
+  {
+    id: 5,
+    title: "URL Shortener – End-to-End DevOps Pipeline",
+    description:
+      "Implemented a URL shortener application with an automated CI/CD pipeline,containerization, cloud infrastructure provisioning, and deployment.",
+    image: "/projects/cloud.jpg",
+    tags: ["Docker", "Terraform", "Ansible", "Kubernetes", "Azure"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/dewni-shivanthi-23/url-shortener-devops.",
+  },
+  {
+    id: 6,
+    title: "AI Study Buddy",
+    description:
+      "Developed a mobile learning assistant that helps students answer questions, generate summaries, and improve study efficiency using AI-powered features.",
+    image: "/projects/AI.jpg",
+    tags: ["Flutter", "Dart", "Firebase", "Firestore"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/dewni-shivanthi-23/study_buddy",
   },
 ];
 

@@ -94,7 +94,7 @@ export const HeroSection = () => {
         {/* GRID LAYOUT */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
           {/* LEFT CONTENT */}
-          <div className="text-center md:text-left space-y-6 pt-14 pl-10">
+          <div className="text-center md:text-left space-y-6 pt-14 md:pl-10">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               <span className="opacity-0 animate-fade-in">Hello, I'm </span>
               <span className="text-primary opacity-0 animate-fade-in-delay-1">

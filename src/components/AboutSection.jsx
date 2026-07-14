@@ -62,7 +62,8 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href="/Dewni_Andradi_CV.pdf"
+                download="Dewni_Andradi_CV.pdf"
                 className="text-sm px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
